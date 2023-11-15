@@ -29,6 +29,9 @@ npx prisma migrate dev --name init
 ```
 DATABASE_URL=
 NEXTAUTH_SECRET=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 ```
 
 ```
@@ -41,6 +44,17 @@ npx prisma migrate dev --name init
 
 ```
 npx shadcn-ui@latest add toast
+```
+
+```
+npm run dev
+```
+
+
+## Build
+
+```
+npm run build
 ```
 
 ## Development Server

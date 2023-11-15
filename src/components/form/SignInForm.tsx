@@ -59,6 +59,7 @@ const SignInForm = () => {
   };
 
   return (
+    <div className='pt-10 mx-auto max-w-md'>
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className='w-full'>
         <div className='space-y-2'>
@@ -108,6 +109,7 @@ const SignInForm = () => {
         </Link>
       </p>
     </Form>
+    </div>
   );
 };
 

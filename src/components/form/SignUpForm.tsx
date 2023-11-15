@@ -71,6 +71,7 @@ const SignUpForm = () => {
   };
 
   return (
+    <div className='pt-10 mx-auto max-w-md'>
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className='w-full'>
         <div className='space-y-2'>
@@ -81,7 +82,7 @@ const SignUpForm = () => {
               <FormItem>
                 <FormLabel>Username</FormLabel>
                 <FormControl>
-                  <Input placeholder='johndoe' {...field} />
+                  <Input placeholder='Username' {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -150,6 +151,7 @@ const SignUpForm = () => {
         </Link>
       </p>
     </Form>
+    </div>
   );
 };
 
