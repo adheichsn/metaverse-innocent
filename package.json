@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx prisma migrate dev --name init && npx shadcn-ui@latest add toast",
+    "build": "next build && npx prisma generate && npx prisma migrate dev --name init && npx shadcn-ui@latest add toast",
     "start": "next start",
     "lint": "next lint"
   },
