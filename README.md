@@ -24,7 +24,7 @@ npx prisma migrate dev --name init
 
 ## Get Started
 
-# Create file .env
+### create file .env
 
 ```
 DATABASE_URL=
