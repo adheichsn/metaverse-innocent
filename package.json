@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && npx prisma generate && npx prisma migrate dev --name init && npx shadcn-ui@latest add toast",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",

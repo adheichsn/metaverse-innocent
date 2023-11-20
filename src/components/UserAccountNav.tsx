@@ -1,15 +1,26 @@
-'use client'
-import React from 'react'
-import { Button } from './ui/button'
-import { signOut } from 'next-auth/react'
+'use client';
+import { useRouter } from 'next/navigation';
+import React from 'react';
+import { Button } from './ui/button';
+import { signOut } from 'next-auth/react';
 
 const UserAccountNav = () => {
-  return (
-    <Button onClick={() => signOut({
-        redirect: true,
-        callbackUrl: `${window.location.origin}/sign-in`
-    })} variant='destructive'>Sign Out</Button>
-  )
-}
+  const router = useRouter();
+  // console.log('window.location.origin:', window.location.origin);
 
-export default UserAccountNav
+  return (
+    <Button
+      onClick={() =>
+        signOut({
+          redirect: true,
+          callbackUrl: `${window.location.origin}/sign-in`,
+        }).then(() => router.push('/sign-in'))
+      }
+      variant='destructive'
+    >
+      Sign Out
+    </Button>
+  );
+};
+
+export default UserAccountNav;
