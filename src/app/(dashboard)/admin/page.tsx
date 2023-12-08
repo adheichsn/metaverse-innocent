@@ -23,7 +23,7 @@ const page = async () => {
         <section className="bg-white dark:bg-gray-900">
           <div className="mx-auto">
             <iframe
-              src='https://icmetaverse.virtualreality-lab.com/'
+              src='https://mdl-showcase.svcc.io/'
               title='Unity Pages'
               width='100%'
               height='800px'
