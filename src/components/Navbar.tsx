@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { buttonVariants } from './ui/button';
-import { HandMetal } from 'lucide-react';
 import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
 import UserAccountNav from './UserAccountNav';
